@@ -38,8 +38,23 @@ public class Main {
         System.out.println("Минимальная сумма трат за день составила " + minSumm
                 + " рублей. Максимальная сумма трат за день составила " + maxSumm + " рублей");
     }
+
+    public static void task3(){
+        System.out.println("Задание 3:");
+        int[] arr = generateRandomArray();
+        int summ = 0;
+        float averageSumm = 0;
+
+        for (int i : arr) {
+            summ+= i;
+        }
+        averageSumm = summ / arr.length;
+
+        System.out.println("Средняя сумма трат за месяц составила " + averageSumm + " рублей");
+    }
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 }
