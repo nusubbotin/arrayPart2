@@ -52,9 +52,19 @@ public class Main {
 
         System.out.println("Средняя сумма трат за месяц составила " + averageSumm + " рублей");
     }
+
+    public static void task4(){
+        System.out.println("Задание 4:");
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+        }
+    }
     public static void main(String[] args) {
         task1();
         task2();
         task3();
+        task4();
     }
 }
