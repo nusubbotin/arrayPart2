@@ -17,7 +17,29 @@ public class Main {
         }
         System.out.println("Сумма трат за месяц составила " + summ + " рублей");
     }
+
+    public static void task2(){
+        System.out.println("Задание 2:");
+        int[] arr = generateRandomArray();
+        int minSumm, maxSumm = 0;
+
+        for (int i : arr) {
+            if (maxSumm < i) {
+                maxSumm = i;
+            }
+        }
+
+        minSumm = maxSumm;
+        for (int i : arr) {
+            if (minSumm > i) {
+                minSumm = i;
+            }
+        }
+        System.out.println("Минимальная сумма трат за день составила " + minSumm
+                + " рублей. Максимальная сумма трат за день составила " + maxSumm + " рублей");
+    }
     public static void main(String[] args) {
         task1();
+        task2();
     }
 }
