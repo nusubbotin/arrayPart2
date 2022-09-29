@@ -12,8 +12,8 @@ public class Main {
         System.out.println("Задание 1:");
         int[] arr = generateRandomArray();
         int summ = 0;
-        for (int i : arr) {
-            summ+= i;
+        for (int elem : arr) {
+            summ+= elem;
         }
         System.out.println("Сумма трат за месяц составила " + summ + " рублей");
     }
@@ -23,16 +23,16 @@ public class Main {
         int[] arr = generateRandomArray();
         int minSumm, maxSumm = 0;
 
-        for (int i : arr) {
-            if (maxSumm < i) {
-                maxSumm = i;
+        for (int elem : arr) {
+            if (maxSumm < elem) {
+                maxSumm = elem;
             }
         }
 
         minSumm = maxSumm;
-        for (int i : arr) {
-            if (minSumm > i) {
-                minSumm = i;
+        for (int elem : arr) {
+            if (minSumm > elem) {
+                minSumm = elem;
             }
         }
         System.out.println("Минимальная сумма трат за день составила " + minSumm
@@ -45,8 +45,8 @@ public class Main {
         int summ = 0;
         float averageSumm = 0;
 
-        for (int i : arr) {
-            summ+= i;
+        for (int elem : arr) {
+            summ+= elem;
         }
 
         averageSumm = (float) summ / arr.length;
